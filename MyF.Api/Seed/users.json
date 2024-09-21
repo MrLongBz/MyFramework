@@ -1,0 +1,28 @@
+[
+    {
+      "UserName": "admin",
+      "Email": "admin@example.com",
+      "PasswordHash": "AQAAAAEAACcQAAAAEHxHEwNAZeZHYBRNsHxhGZnFPeVYZCQYKgOZFTnqwBGZkHRjwfBVe/+lmOtf1d1zMg==",
+      "FirstName": "Admin",
+      "LastName": "User",
+      "PhoneNumber": "1234567890",
+      "IsActive": true,
+      "LastLoginDate": null,
+      "CreatedAt": "2023-05-01T00:00:00Z",
+      "UpdatedAt": null,
+      "IsDeleted": false
+    },
+    {
+      "UserName": "user",
+      "Email": "user@example.com",
+      "PasswordHash": "AQAAAAEAACcQAAAAEJd6X2gwZzgWnvMKFTkWIXgxlnPOvqOWxGFJbKQXGqYXwR3VIWuLFI4Oa5RsV0zqrA==",
+      "FirstName": "Regular",
+      "LastName": "User",
+      "PhoneNumber": "9876543210",
+      "IsActive": true,
+      "LastLoginDate": null,
+      "CreatedAt": "2023-05-01T00:00:00Z",
+      "UpdatedAt": null,
+      "IsDeleted": false
+    }
+  ]
