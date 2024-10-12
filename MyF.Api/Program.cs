@@ -1,6 +1,7 @@
 using MyF.Entities.BaseModels;
 using MyF.Infrastructure.Configuration;
 using MyF.Infrastructure.Data;
+using MyF.Infrastructure.Mapping;
 using MyF.Services;
 using System.Reflection;
 
@@ -18,10 +19,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
+builder.Services.AddScoped<IMapper, AutoMapper>();
 builder.Services.AddScoped(typeof(IService<>), typeof(Service<>));
 builder.Services.AddScoped<IUserService, UserService>();
-
+builder.Services.AddScoped<IRoleService, RoleService>();
 
 var app = builder.Build();
 
@@ -44,7 +45,9 @@ using (var scope = app.Services.CreateScope())
 
         // 添加种子数据
     var seeder = new DatabaseSeeder(dbContext);
-    seeder.SeedData<User>("users.json");
+    seeder.SeedData<User>("P_Users.json");
+    seeder.SeedData<Role>("roles.json");
+    seeder.SeedData<RolePermission>("rolepermissions.json");
 }
 
 // Configure the HTTP request pipeline.

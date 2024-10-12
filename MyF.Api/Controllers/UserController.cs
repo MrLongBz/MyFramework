@@ -25,16 +25,6 @@ namespace MyF.Api.Controllers
             return await _userService.GetAllAsync();
         }
 
-        [HttpPost("login")]
-        public async Task<ActionResult<User>> Login(string account, string password)
-        {
-            var user = await _userService.LoginAsync(account, password);
-            if (user == null)
-            {
-                return Unauthorized("Invalid username or password");
-            }
-            return Ok(user);
-        }
 
         [HttpPost("register")]
         public async Task<ActionResult<User>> Register([FromBody] UserRegistrationModel model)

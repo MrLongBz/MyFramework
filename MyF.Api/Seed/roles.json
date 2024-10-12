@@ -1,0 +1,10 @@
+[
+  {
+      "RoleName": "SuperAdmin",
+      "Description": "超级管理员，拥有所有权限"
+  },
+  {
+      "RoleName": "User",
+      "Description": "普通用户"
+  }
+]

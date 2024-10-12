@@ -15,7 +15,7 @@ namespace MyF.Infrastructure.Data
             _dbContext = dbContext;
         }
 
-        public void SeedData<T>(string seedFileName) where T : class, IEntity, new()
+        public void SeedData<T>(string seedFileName) where T : BaseEntity, new()
         {
             var entities = LoadEntitiesFromJson<T>(seedFileName);
             if (entities != null && entities.Any())
@@ -28,7 +28,7 @@ namespace MyF.Infrastructure.Data
             }
         }
 
-        private List<T> LoadEntitiesFromJson<T>(string seedFileName) where T : class, new()
+        private List<T> LoadEntitiesFromJson<T>(string seedFileName) where T : BaseEntity, new()
         {
             string seedFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Seed", seedFileName);
             if (!File.Exists(seedFilePath))

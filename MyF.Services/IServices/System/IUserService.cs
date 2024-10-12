@@ -7,7 +7,7 @@ namespace MyF.Services
     {
         Task<User> GetByUsernameAsync(string username);
         Task<User> GetByEmailAsync(string email);
-        Task<User> LoginAsync(string account, string password);
+        Task<(User user,List<Role> roles, List<Permission> permissions)> LoginAsync(string account, string password);
         Task<User> CreateUserAsync(UserRegistrationModel userDto, string password);
     }
 }

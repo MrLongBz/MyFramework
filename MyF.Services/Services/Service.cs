@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 
 namespace MyF.Services
 {
-    public class Service<T> : IService<T> where T : class, IEntity, new()
+    public class Service<T> : IService<T> where T : class,  new()
     {
         protected readonly SqlSugarDbContext _dbContext;
         protected readonly ISqlSugarClient _db;

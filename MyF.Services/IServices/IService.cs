@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 
 namespace MyF.Services
 {
-    public interface IService<T> where T : class, IEntity
+    public interface IService<T> where T : class
     {
         Task<T> GetByIdAsync(int id);
         Task<IEnumerable<T>> GetAllAsync();

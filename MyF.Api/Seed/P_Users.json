@@ -1,0 +1,50 @@
+[
+  {
+      "Account": "admin_account", 
+      "UserName": "admin",
+      "Email": "admin@example.com",
+      "PasswordHash": "bbc5e661e106c6dcd8dc6dd186454c2fcba3c710fb4d8e71a60c93eaf077f073", 
+      "PhoneNumber": "1234567890",
+      "IsActive": true,
+      "LastLoginDate": null,
+      "CreatedAt": "2023-05-01T00:00:00Z",
+      "UpdatedAt": null,
+      "IsDeleted": false,
+      "Company": "Admin Company",
+      "Department": "Administration",
+      "WeChat": "admin_wechat", 
+      "Gender": 1 
+  },
+  {
+    "Account": "user_account",
+    "UserName": "user",
+    "Email": "user@example.com",
+    "PasswordHash": "bbc5e661e106c6dcd8dc6dd186454c2fcba3c710fb4d8e71a60c93eaf077f073",
+    "PhoneNumber": "9876543210",
+    "IsActive": true,
+    "LastLoginDate": null,
+    "CreatedAt": "2023-05-01T00:00:00Z",
+    "UpdatedAt": null,
+    "IsDeleted": false,
+    "Company": "Regular Company",
+    "Department": "User Department",
+    "WeChat": "user_wechat",
+    "Gender": 2
+  },
+  {
+    "Account": "superadmin_account",
+    "UserName": "superadmin",
+    "Email": "superadmin@example.com",
+    "PasswordHash": "bbc5e661e106c6dcd8dc6dd186454c2fcba3c710fb4d8e71a60c93eaf077f073",
+    "PhoneNumber": "1111111111", 
+    "IsActive": true,
+    "LastLoginDate": null,
+    "CreatedAt": "2023-05-01T00:00:00Z",
+    "UpdatedAt": null,
+    "IsDeleted": false,
+    "Company": "Super Admin Company",
+    "Department": "Administration",
+    "WeChat": "superadmin_wechat",
+    "Gender": 1
+  }
+]
